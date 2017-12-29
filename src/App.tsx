@@ -1,7 +1,7 @@
 import * as React from 'react';
 import hub from "./hub";
 import "./actions";
-
+const styles = require("./App.scss");
 export default class App extends React.Component {
     componentDidMount() {
         hub.on("update", () => this.forceUpdate());
@@ -9,7 +9,7 @@ export default class App extends React.Component {
     }
     render() {
         return (
-            <div>App Component 2</div>
+            <div className={styles.app}>App Component 2</div>
         );
     }
 }
