@@ -1,5 +1,5 @@
 import * as React from 'react';
-import hub from "./hub";
+import hub from "hub";
 import "./actions";
 const styles = require("./App.scss");
 export default class App extends React.Component {
